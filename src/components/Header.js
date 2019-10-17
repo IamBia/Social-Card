@@ -1,7 +1,7 @@
 import React from 'react';
+import Data from '../components/Data';
 
-
-const Header = () => {
+const Header = (props) => {
 
     const header = {
         backgroundColor: '#e74c3c',
@@ -21,7 +21,7 @@ const Header = () => {
 
     return(
         <div className="card__header" style={header}>
-            <h1 style={h1}>This is my quote today</h1>
+            <h1 style={h1}>{props.data.quote}</h1>
         </div>
     )
 

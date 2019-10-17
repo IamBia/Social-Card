@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Body from '../components/Body';
 
 
-const Card = () => {
+const Card = (props) => {
 
     const card = {
         width: '20%',
