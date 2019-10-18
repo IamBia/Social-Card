@@ -46,16 +46,27 @@ function App() {
 ]
   return (
     <div className="App">
-      <header className="App-header">
-      <ul>
-            <li>{Data.map((info) => <Card quote={info.quote} 
-            nationality={info.nationality} 
-            profession={info.profession}
-            author={info.author}
-            key={info.id}/>)}</li>
-   </ul>
-      </header>
-    </div>
+    <div className="container">
+    <div className="row">
+
+
+
+          
+           {Data.map((info) => 
+           <div className="col-4">
+            <Card 
+              quote={info.quote} 
+              nationality={info.nationality} 
+              profession={info.profession}
+              author={info.author}
+              key={info.id}/>
+              </div>
+            )};
+      
+ </div>
+   </div>
+   </div>
+   
   );
 }
 

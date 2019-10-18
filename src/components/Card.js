@@ -4,9 +4,9 @@ import React from 'react';
 const Card = (props) => {
     
     const card = {
-        width: '20%',
         border: '1px solid #eee',
-        borderRadius: '10px'
+        borderRadius: '10px',
+        margin: '10px 20px'
     }
     const header = {
         backgroundColor: '#e74c3c',
@@ -16,11 +16,13 @@ const Card = (props) => {
         justifyContent: 'center',
         borderTopLeftRadius: '10px',
         borderTopRightRadius: '10px',
+        padding: '15px'
     }
     
     const h1 = {
         color: 'white',
         textAlign: 'center',
+        fontSize: '18px'
         
     }
     const p = {
