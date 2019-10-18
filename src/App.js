@@ -13,7 +13,7 @@ function App() {
     },
     {
         id: 2,
-        quote: 'Everything happening around me is very random. I am enjoying the phase, as the journey is far more enjoyable than the destinatio',
+        quote: 'Everything happening around me is very random. I am enjoying the phase, as the journey is far more enjoyable than the destination.',
         nationality: 'Indian',
         profession: 'Actor',
         author: 'Sushant Singh Rajput'
@@ -49,9 +49,6 @@ function App() {
     <div className="container">
     <div className="row">
 
-
-
-          
            {Data.map((info) => 
            <div className="col-4">
             <Card 
@@ -61,13 +58,13 @@ function App() {
               author={info.author}
               key={info.id}/>
               </div>
-            )};
-      
- </div>
+            )}
+
+   </div>
    </div>
    </div>
    
-  );
+  )
 }
 
 export default App;

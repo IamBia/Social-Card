@@ -9,7 +9,7 @@ const Card = (props) => {
         margin: '10px 20px'
     }
     const header = {
-        backgroundColor: '#e74c3c',
+        backgroundColor: '#0984e3',
         height: '200px',
         display: 'flex',
         alignItems: 'center',
@@ -48,7 +48,10 @@ const Card = (props) => {
                 <h2>{props.nationality}</h2>
                 <p style={p}>{props.profession}</p>
                 <p style={p}> {props.author} </p>
-                <a href="https://instagram.com/bia.dev" style={link}>bia.dev</a>
+                <a href="https://instagram.com/bia.dev" target='_blank' style={link}>bia.dev</a>
+            </div>
+            <div className="card__footer d-flex justify-content-end p-2">
+                <i class="far fa-heart"></i>
             </div>
         </div>
         )
