@@ -48,7 +48,11 @@ function App() {
     <div className="App">
       <header className="App-header">
       <ul>
-            <li>{Data.map((info) =>  <Card quote={info.quote} key={info.id}/>)}</li>
+            <li>{Data.map((info) => <Card quote={info.quote} 
+            nationality={info.nationality} 
+            profession={info.profession}
+            author={info.author}
+            key={info.id}/>)}</li>
    </ul>
       </header>
     </div>
