@@ -47,6 +47,9 @@ function App() {
   return (
     <div className="App">
     <div className="container">
+    <div className="row d-flex justify-content-center py-5">
+    <h1>Quotes</h1>
+    </div>
     <div className="row">
 
            {Data.map((info) => 

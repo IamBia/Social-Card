@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Radium from 'radium';
 
 const Card = (props) => {
     
@@ -38,6 +38,13 @@ const Card = (props) => {
         color: '#aaa',
         fontSize: '14px'
     }
+
+    const heart = {
+        ':hover':{
+            color: 'red'
+        },
+        pointer: 'cursor'
+    }
     
     return(
         <div className="card" style={card}>
@@ -45,16 +52,16 @@ const Card = (props) => {
                 <h1 style={h1}>{props.quote}</h1>
             </div>
             <div className="card__body" style={body}>
-                <h2>{props.nationality}</h2>
+                <h2>{props.author}</h2>
                 <p style={p}>{props.profession}</p>
-                <p style={p}> {props.author} </p>
+                <p style={p}> {props.nationality} </p>
                 <a href="https://instagram.com/bia.dev" target='_blank' style={link}>bia.dev</a>
             </div>
             <div className="card__footer d-flex justify-content-end p-2">
-                <i class="far fa-heart"></i>
+                <i class="far fa-heart" style={heart}></i>
             </div>
         </div>
         )
     }
     
-    export default Card;
+    export default Radium(Card);
