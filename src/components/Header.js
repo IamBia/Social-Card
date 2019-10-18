@@ -1,5 +1,4 @@
 import React from 'react';
-import Data from '../components/Data';
 
 const Header = (props) => {
 
@@ -21,7 +20,7 @@ const Header = (props) => {
 
     return(
         <div className="card__header" style={header}>
-            <h1 style={h1}>{props.data.quote}</h1>
+            <h1 style={h1}>{props.quote}</h1>
         </div>
     )
 

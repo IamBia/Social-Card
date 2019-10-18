@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Body = () => {
+
+const Body = (props) => {
 
     const p = {
         fontSize: '14px'
@@ -18,7 +19,7 @@ const Body = () => {
 
     return (
         <div className="card__body" style={body}>
-            <h2>This is a title</h2>
+            <h2>{props.nationality}</h2>
             <p style={p}>This is a paragraph</p>
             <p style={p}> Author: Bia </p>
             <a href="https://instagram.com/bia.dev" style={link}>bia.dev</a>

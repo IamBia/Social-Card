@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Body from '../components/Body';
 
 
-const Card = (props) => {
+const Card = () => {
 
     const card = {
         width: '20%',
@@ -11,11 +11,16 @@ const Card = (props) => {
         borderRadius: '10px'
     }
 
+
+
     return(
-        <div className="card" style={card}>
-            <Header data="props.Header"></Header>
-            <Body data="props.Body"></Body>
+  
+<div className="card" style={card}>
+            <Header></Header>
+            <Body></Body>
         </div>
+        
+       
     )
 
 }
