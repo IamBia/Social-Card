@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Radium from 'radium';
 
 const Card = (props) => {
@@ -41,10 +41,24 @@ const Card = (props) => {
 
     const heart = {
         ':hover':{
-            color: 'red'
-        },
-        pointer: 'cursor'
+            color: 'red',
+            cursor: 'pointer'
+        }
     }
+
+    const [likeBtn, likeBtnClicked] = useState({
+        count: 0
+    })
+
+
+
+    const btnClicked = () => {
+        let newCount = likeBtn.count + 1;
+        likeBtnClicked({
+            count: newCount
+        })
+    }
+    console.log(btnClicked)
     
     return(
         <div className="card" style={card}>
@@ -58,7 +72,9 @@ const Card = (props) => {
                 <a href="https://instagram.com/bia.dev" target='_blank' style={link}>bia.dev</a>
             </div>
             <div className="card__footer d-flex justify-content-end p-2">
-                <i class="far fa-heart" style={heart}></i>
+                <a onClick={btnClicked}>
+                    <i style={heart} className="far fa-heart"> {likeBtn.count} </i>
+                </a>
             </div>
         </div>
         )

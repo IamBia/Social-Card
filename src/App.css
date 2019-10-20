@@ -17,3 +17,11 @@ ul{
 li{
     display: inline-flex;
 }
+
+.background-red{
+    background-color: red;
+}
+
+.background-transparent{
+    background-color: transparent;
+}

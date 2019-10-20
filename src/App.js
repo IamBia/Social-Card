@@ -46,14 +46,14 @@ function App() {
 ]
   return (
     <div className="App">
-    <div className="container">
+    <div className="container mb-5">
     <div className="row d-flex justify-content-center py-5">
     <h1>Quotes</h1>
     </div>
     <div className="row">
 
            {Data.map((info) => 
-           <div className="col-4">
+           <div className="col-4 my-2" key={info.id}>
             <Card 
               quote={info.quote} 
               nationality={info.nationality} 
