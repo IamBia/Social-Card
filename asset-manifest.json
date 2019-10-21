@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Social-Card/static/css/main.18ad2b42.chunk.css",
+    "main.js": "/Social-Card/static/js/main.aa76d8a0.chunk.js",
+    "main.js.map": "/Social-Card/static/js/main.aa76d8a0.chunk.js.map",
+    "runtime-main.js": "/Social-Card/static/js/runtime-main.f7c19f14.js",
+    "runtime-main.js.map": "/Social-Card/static/js/runtime-main.f7c19f14.js.map",
+    "static/js/2.38ab6cfa.chunk.js": "/Social-Card/static/js/2.38ab6cfa.chunk.js",
+    "static/js/2.38ab6cfa.chunk.js.map": "/Social-Card/static/js/2.38ab6cfa.chunk.js.map",
+    "index.html": "/Social-Card/index.html",
+    "precache-manifest.07f3110e66f9ef9c20ba62da809be9c7.js": "/Social-Card/precache-manifest.07f3110e66f9ef9c20ba62da809be9c7.js",
+    "service-worker.js": "/Social-Card/service-worker.js",
+    "static/css/main.18ad2b42.chunk.css.map": "/Social-Card/static/css/main.18ad2b42.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f7c19f14.js",
+    "static/js/2.38ab6cfa.chunk.js",
+    "static/css/main.18ad2b42.chunk.css",
+    "static/js/main.aa76d8a0.chunk.js"
+  ]
+}
