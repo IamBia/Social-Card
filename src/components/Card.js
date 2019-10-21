@@ -40,6 +40,7 @@ const Card = (props) => {
     }
 
     const heart = {
+        color: 'red',
         ':hover':{
             color: 'red',
             cursor: 'pointer'
@@ -48,11 +49,10 @@ const Card = (props) => {
 
     const [likeBtn, likeBtnClicked] = useState({
         count: 0
-    })
+        })
 
-
-
-    const btnClicked = () => {
+    const btnClicked = (e) => {
+        e.preventDefault();
         let newCount = likeBtn.count + 1;
         likeBtnClicked({
             count: newCount
@@ -69,11 +69,11 @@ const Card = (props) => {
                 <h2>{props.author}</h2>
                 <p style={p}>{props.profession}</p>
                 <p style={p}> {props.nationality} </p>
-                <a href="https://instagram.com/bia.dev" target='_blank' style={link}>bia.dev</a>
+                <a href="https://instagram.com/bia.dev" target='_blank' rel="noopener noreferrer" style={link}>bia.dev</a>
             </div>
             <div className="card__footer d-flex justify-content-end p-2">
-                <a onClick={btnClicked}>
-                    <i style={heart} className="far fa-heart"> {likeBtn.count} </i>
+                <a style={heart} href="#">
+                    <i className="fas fa-heart" onClick={btnClicked} > {likeBtn.count} </i>
                 </a>
             </div>
         </div>
